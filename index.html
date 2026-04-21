@@ -10,14 +10,16 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 60px 80px;
+      padding: 40px 20px;
       background-color: #f6f1e6;
       color: #2f5e46;
-      text-align: left;
+      display: flex;
+      justify-content: center;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 750px;
+      width: 100%;
     }
 
     h1 {
@@ -31,15 +33,15 @@
       font-size: 18px;
       font-weight: 400;
       margin-top: 0;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       color: #3f7a5a;
     }
 
     h2 {
       font-size: 26px;
       font-weight: 500;
-      margin-top: 50px;
-      margin-bottom: 15px;
+      margin-top: 40px;
+      margin-bottom: 12px;
       color: #2f5e46;
       border-left: 4px solid #6fa58a;
       padding-left: 12px;
@@ -48,7 +50,7 @@
     h3 {
       font-size: 18px;
       font-weight: 500;
-      margin-top: 20px;
+      margin-top: 18px;
       margin-bottom: 5px;
       color: #3f7a5a;
     }
@@ -57,22 +59,21 @@
       font-size: 18px;
       line-height: 1.7;
       color: #3a5f4b;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .section-box {
       border: 2px solid #2f5e46;
       border-radius: 12px;
-      padding: 20px 25px;
-      margin: 30px 0;
+      padding: 18px 22px;
+      margin: 20px 0;
       background-color: rgba(255, 255, 255, 0.5);
     }
 
-    /* ✅ IMAGE GRID SYSTEM (equal size, no cropping) */
     .image-row {
       display: flex;
-      gap: 20px;
-      margin: 15px 0;
+      gap: 12px;
+      margin: 10px 0;
     }
 
     .image-box {
@@ -92,10 +93,13 @@
       object-fit: contain;
     }
 
-    /* mobile stacking */
     @media (max-width: 700px) {
       .image-row {
         flex-direction: column;
+      }
+
+      .image-box {
+        width: 100%;
       }
     }
 
@@ -130,7 +134,7 @@
     <div class="section-box">
       <h2>How to Play</h2>
       <p>
-        Players move across a hidden tile-based board revealed as they explore. Each tile may contain treasures, goblins, or hazards. Some goblins can be fought, while others are best avoided. The goal is to navigate toward the goblin town at the center without alerting too many enemies or triggering overwhelming danger.
+        Players explore a hidden forest map, revealing tiles as they move. Each tile may contain treasures, goblins, or hazards. Players must balance exploration and stealth while avoiding alerting the goblin town at the center of the board.
       </p>
     </div>
 
@@ -138,13 +142,13 @@
       <h2>Game Elements</h2>
 
       <h3>The Board</h3>
-      <p>The board is a modular, hidden system revealed as players move through the forest.</p>
+      <p>Hidden modular board revealed through gameplay.</p>
 
       <h3>The Characters</h3>
-      <p>Players choose characters with different abilities that affect movement and survival.</p>
+      <p>Unique player roles with different abilities.</p>
 
       <h3>The Cards</h3>
-      <p>Cards introduce events, abilities, and challenges throughout gameplay.</p>
+      <p>Event and action cards that shape gameplay decisions.</p>
     </div>
 
     <div class="section-box">
@@ -163,27 +167,27 @@
       </div>
 
       <p>
-        The physical components were laser cut, 3D printed, and assembled to create a modular board system.
+        Laser cutting, 3D printing, and physical assembly were used to construct the modular board system.
       </p>
 
       <h3>Electronics</h3>
-      <p>Neopixels, hall effect sensors, and servos were used to detect movement and trigger game events.</p>
+      <p>Neopixels, hall effect sensors, and servo motors detect movement and trigger game events.</p>
 
       <h3>Design Tools</h3>
-      <p>Adobe Illustrator and Procreate were used for card and visual design development.</p>
+      <p>Adobe Illustrator and Procreate were used for visual and card design.</p>
     </div>
 
     <div class="section-box">
       <h2>Development Process</h2>
       <p>
-        The game evolved through multiple iterations, playtests, and feedback sessions that refined both mechanics and physical design.
+        The game evolved through multiple iterations, prototypes, and playtests that refined mechanics and physical design.
       </p>
     </div>
 
     <div class="section-box">
       <h2>Final Results</h2>
       <p>
-        The final build combines physical interactivity, hidden information, and dynamic exploration to create an immersive board game experience.
+        The final version combines hidden information, physical interaction, and strategic exploration into a cohesive board game experience.
       </p>
     </div>
 
