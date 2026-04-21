@@ -83,9 +83,31 @@
       width: 60%;
       max-width: 450px;
       height: auto;
-      display: block;
-      margin: 15px 0;
       border-radius: 10px;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin: 15px 0;
+    }
+
+    .image-row img {
+      width: 50%;
+      max-width: 450px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .image-row {
+        flex-direction: column;
+      }
+
+      .image-row img {
+        width: 100%;
+      }
     }
 
     ::selection {
@@ -142,7 +164,12 @@
       <h2>How It Was Made</h2>
 
       <h3>Fabrication</h3>
-      <img src="Board Solid Piece.png" alt="Fabrication process">
+
+      <div class="image-row">
+        <img src="Board Solid Piece.png" alt="Fabrication process 1">
+        <img src="your-second-image.png" alt="Fabrication process 2">
+      </div>
+
       <p>Lorem ipsum dolor sit amet...</p>
 
       <h3>Electronics</h3>
