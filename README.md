@@ -1,7 +1,7 @@
+# ADD IMAGE OF BOARD HERE
+
 # Hush In The Hollow
 Hush in the Hollow is an interactive board game set in a magical forest overtaken by a goblin town. Move carefully to avoid alerting the goblin army as you journey through the ever-changing forest. Collect treasures, defeat enemies, and emerge as the victor of the forest.
-
-# ADD IMAGE OF BOARD HERE
 
 # How Gameplay Works
 The board integrates Hall effect sensors and NeoPixel LEDs to create a dynamic, hidden-map system. Player pieces contain magnets that activate sensors embedded beneath each tile, triggering visual feedback when a tile is explored.
