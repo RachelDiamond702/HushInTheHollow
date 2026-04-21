@@ -1,58 +1,160 @@
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 60px;
-    background-color: #f6f1e6; /* off-white parchment */
-    color: #1f3b2c; /* deep forest green */
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hush in the Hollow</title>
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  <!-- Roboto Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-  h1 {
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #163524; /* darker forest green */
-  }
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 60px;
+      background-color: #f6f1e6; /* parchment */
+      color: #1f3b2c; /* forest green */
+    }
 
-  h2 {
-    font-size: 26px;
-    font-weight: 500;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    color: #1f3b2c;
-    border-left: 4px solid #3d6b4f;
-    padding-left: 10px;
-  }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-  h3 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    color: #2f5a41;
-  }
+    h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #163524;
+    }
 
-  p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #2b3f33;
-    margin-bottom: 20px;
-  }
+    h2 {
+      font-size: 26px;
+      font-weight: 500;
+      margin-top: 50px;
+      margin-bottom: 15px;
+      color: #1f3b2c;
+      border-left: 4px solid #3d6b4f;
+      padding-left: 12px;
+    }
 
-  /* subtle section spacing */
-  .container > * {
-    margin-bottom: 10px;
-  }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      color: #2f5a41;
+    }
 
-  /* optional: soft selection feel */
-  ::selection {
-    background: #3d6b4f;
-    color: #f6f1e6;
-  }
-</style>
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #2b3f33;
+      margin-bottom: 15px;
+    }
+
+    /* 🌿 Section box styling */
+    .section-box {
+      border: 2px solid #1f3b2c;
+      border-radius: 12px;
+      padding: 20px 25px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: rgba(255, 255, 255, 0.4);
+      transition: 0.2s ease;
+    }
+
+    .section-box:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(31, 59, 44, 0.15);
+    }
+
+    /* subtle selection */
+    ::selection {
+      background: #3d6b4f;
+      color: #f6f1e6;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Hush in the Hollow</h1>
+    <h2>By: Rachel Diamond</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    </p>
+
+    <!-- ABOUT -->
+    <div class="section-box">
+      <h2>About the Game</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <!-- HOW TO PLAY -->
+    <div class="section-box">
+      <h2>How to Play</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <!-- GAME ELEMENTS -->
+    <div class="section-box">
+      <h2>Game Elements</h2>
+
+      <h3>The Board</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <h3>The Characters</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <h3>The Cards</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <!-- HOW IT WAS MADE -->
+    <div class="section-box">
+      <h2>How It Was Made</h2>
+
+      <h3>Fabrication</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <h3>Electronics</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+
+      <h3>Design Tools</h3>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+
+    <!-- PROCESS -->
+    <div class="section-box">
+      <h2>Development Process</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <!-- FINAL -->
+    <div class="section-box">
+      <h2>Final Results</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
 
