@@ -89,7 +89,7 @@
       margin: 10px 0;
     }
 
-    .image-box {
+    .media-box {
       flex: 1;
       height: 250px;
       display: flex;
@@ -98,7 +98,8 @@
       overflow: hidden;
     }
 
-    .image-box img {
+    .media-box img,
+    .media-box video {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
@@ -106,7 +107,7 @@
     }
 
     .rotate-90 {
-      transform: rotate(270deg);
+      transform: rotate(90deg);
     }
 
     @media (max-width: 700px) {
@@ -138,13 +139,21 @@
     <p class="subtitle">By: Rachel Diamond</p>
 
     <div class="image-row">
-      <div class="image-box">
+
+      <div class="media-box">
         <img src="Final Design.JPG" alt="Final Design 1">
       </div>
 
-      <div class="image-box">
+      <div class="media-box">
         <img src="Final Design 2.JPG" alt="Final Design 2" class="rotate-90">
       </div>
+
+      <div class="media-box">
+        <video controls>
+          <source src="Final Design Video.MOV" type="video/quicktime">
+        </video>
+      </div>
+
     </div>
 
     <div class="section-box">
@@ -154,26 +163,6 @@
 
     <div class="section-box">
       <h2>How to Play</h2>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </div>
-
-    <div class="section-box">
-      <h2>Game Elements</h2>
-
-      <h3>The Board</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-
-      <h3>The Characters</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-
-      <h3>The Cards</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
-    </div>
-
-    <div class="section-box">
-      <h2>How It Was Made</h2>
-
-      <h3>Fabrication</h3>
       <p>Lorem ipsum dolor sit amet...</p>
     </div>
 
