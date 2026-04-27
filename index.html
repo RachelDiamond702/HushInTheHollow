@@ -4,43 +4,59 @@
   <meta charset="UTF-8">
   <title>Hush in the Hollow</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Metamorphous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <style>
+    @font-face {
+      font-family: 'CCSpellcaster';
+      src: url('fonts/CCSpellcaster.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 40px 20px;
+      padding: 40px 0;
       background-color: #f6f1e6;
       color: #2f5e46;
-      display: flex;
-      justify-content: center;
     }
 
     .container {
-      max-width: 750px;
-      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 60px;
+    }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
     h1 {
-      font-family: 'Metamorphous', serif;
+      font-family: 'CCSpellcaster', serif;
       font-size: 52px;
-      font-weight: 400;
-      margin-bottom: 2px;
+      margin: 0;
       color: #2a5a42;
+      white-space: nowrap;
+    }
+
+    .title-image {
+      height: 140px;
+      width: auto;
+      object-fit: contain;
     }
 
     .subtitle {
       font-size: 18px;
-      font-weight: 400;
-      margin-top: 0;
+      margin-top: 8px;
       margin-bottom: 20px;
       color: #3f7a5a;
     }
 
     h2 {
       font-size: 26px;
-      font-weight: 500;
       margin-top: 40px;
       margin-bottom: 12px;
       color: #2f5e46;
@@ -50,7 +66,6 @@
 
     h3 {
       font-size: 18px;
-      font-weight: 500;
       margin-top: 18px;
       margin-bottom: 5px;
       color: #3f7a5a;
@@ -64,6 +79,7 @@
     }
 
     .section-box {
+      width: 100%;
       border: 2px solid #2f5e46;
       border-radius: 12px;
       padding: 18px 22px;
@@ -98,8 +114,13 @@
         flex-direction: column;
       }
 
-      .image-box {
-        width: 100%;
+      .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .title-image {
+        height: 100px;
       }
     }
 
@@ -113,31 +134,23 @@
 <body>
   <div class="container">
 
-    <h1>Hush in the Hollow</h1>
+    <div class="title-row">
+      <h1>Hush in the Hollow</h1>
+      <img src="Raccoon Design.PNG" class="title-image">
+    </div>
+
     <p class="subtitle">By: Rachel Diamond</p>
 
     <p>ADD IMAGES HERE</p>
 
     <div class="section-box">
       <h2>About the Game</h2>
-      <p>
-        Hush in the Hollow is a stealth-based board game set in a magical forest that has been overtaken by a goblin town at its center. Players begin on the outskirts of the forest and must navigate inward, uncovering a hidden and ever-changing map as they move.
-      </p>
-
-      <p>
-        Along the way, players will collect treasures and encounter goblins—some of which can be fought or avoided depending on strategy. However, the real danger lies in the goblin army at the center of the forest. Every action risks alerting the growing forces within the goblin town, increasing tension as players move closer to their goal.
-      </p>
-
-      <p>
-        The game blends exploration, combat, and stealth, creating a balance between progression and caution in a constantly shifting environment revealed piece by piece.
-      </p>
+      <p>Lorem ipsum dolor sit amet...</p>
     </div>
 
     <div class="section-box">
       <h2>How to Play</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <p>Lorem ipsum dolor sit amet...</p>
     </div>
 
     <div class="section-box">
