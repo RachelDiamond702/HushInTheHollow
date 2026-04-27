@@ -21,35 +21,30 @@
       padding: 0 60px;
     }
 
-    /* TITLE + IMAGE ROW */
+    /* TITLE + IMAGE (tight grouping) */
     .title-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .title-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .title-image {
-      height: 80px;
-      width: auto;
-      object-fit: contain;
+      gap: 12px; /* controls distance between title and image */
     }
 
     h1 {
       font-size: 52px;
       font-weight: 700;
-      margin-bottom: 2px;
+      margin: 0;
       color: #2a5a42;
+      white-space: nowrap;
+    }
+
+    .title-image {
+      height: 70px; /* increase this if you want bigger */
+      width: auto;
+      object-fit: contain;
     }
 
     .subtitle {
       font-size: 18px;
-      margin-top: 0;
+      margin-top: 8px;
       margin-bottom: 20px;
       color: #3f7a5a;
     }
@@ -117,10 +112,6 @@
         flex-direction: column;
         align-items: flex-start;
       }
-
-      .title-image {
-        height: 60px;
-      }
     }
 
     ::selection {
@@ -135,13 +126,11 @@
 
     <!-- TITLE + IMAGE -->
     <div class="title-row">
-      <div class="title-text">
-        <h1>Hush in the Hollow</h1>
-        <p class="subtitle">By: Rachel Diamond</p>
-      </div>
-
+      <h1>Hush in the Hollow</h1>
       <img src="Raccoon Design.PNG" class="title-image">
     </div>
+
+    <p class="subtitle">By: Rachel Diamond</p>
 
     <p>ADD IMAGES HERE</p>
 
