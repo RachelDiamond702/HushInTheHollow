@@ -21,11 +21,10 @@
       padding: 0 60px;
     }
 
-    /* TITLE + IMAGE (tight grouping) */
     .title-row {
       display: flex;
       align-items: center;
-      gap: 12px; /* controls distance between title and image */
+      gap: 12px;
     }
 
     h1 {
@@ -37,7 +36,7 @@
     }
 
     .title-image {
-      height: 70px; /* increase this if you want bigger */
+      height: 140px;
       width: auto;
       object-fit: contain;
     }
@@ -112,6 +111,10 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
+      .title-image {
+        height: 100px;
+      }
     }
 
     ::selection {
@@ -124,7 +127,6 @@
 <body>
   <div class="container">
 
-    <!-- TITLE + IMAGE -->
     <div class="title-row">
       <h1>Hush in the Hollow</h1>
       <img src="Raccoon Design.PNG" class="title-image">
