@@ -105,6 +105,10 @@
       display: block;
     }
 
+    .rotate-90 {
+      transform: rotate(90deg);
+    }
+
     @media (max-width: 700px) {
       .image-row {
         flex-direction: column;
@@ -133,15 +137,16 @@
 
     <p class="subtitle">By: Rachel Diamond</p>
 
-<div class="image-row">
-  <div class="image-box">
-    <img src="Final Design.JPG" alt="Final Design 1">
-  </div>
+    <div class="image-row">
+      <div class="image-box">
+        <img src="Final Design.JPG" alt="Final Design 1">
+      </div>
 
-  <div class="image-box">
-    <img src="Final Design 2.JPG" alt="Final Design 2">
-  </div>
-</div>
+      <div class="image-box">
+        <img src="Final Design 2.JPG" alt="Final Design 2" class="rotate-90">
+      </div>
+    </div>
+
     <div class="section-box">
       <h2>About the Game</h2>
       <p>Lorem ipsum dolor sit amet...</p>
