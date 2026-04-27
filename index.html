@@ -21,6 +21,25 @@
       padding: 0 60px;
     }
 
+    /* TITLE + IMAGE ROW */
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .title-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title-image {
+      height: 80px;
+      width: auto;
+      object-fit: contain;
+    }
+
     h1 {
       font-size: 52px;
       font-weight: 700;
@@ -30,7 +49,6 @@
 
     .subtitle {
       font-size: 18px;
-      font-weight: 400;
       margin-top: 0;
       margin-bottom: 20px;
       color: #3f7a5a;
@@ -38,7 +56,6 @@
 
     h2 {
       font-size: 26px;
-      font-weight: 500;
       margin-top: 40px;
       margin-bottom: 12px;
       color: #2f5e46;
@@ -48,7 +65,6 @@
 
     h3 {
       font-size: 18px;
-      font-weight: 500;
       margin-top: 18px;
       margin-bottom: 5px;
       color: #3f7a5a;
@@ -96,6 +112,15 @@
       .image-row {
         flex-direction: column;
       }
+
+      .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .title-image {
+        height: 60px;
+      }
     }
 
     ::selection {
@@ -108,8 +133,15 @@
 <body>
   <div class="container">
 
-    <h1>Hush in the Hollow</h1>
-    <p class="subtitle">By: Rachel Diamond</p>
+    <!-- TITLE + IMAGE -->
+    <div class="title-row">
+      <div class="title-text">
+        <h1>Hush in the Hollow</h1>
+        <p class="subtitle">By: Rachel Diamond</p>
+      </div>
+
+      <img src="CHANGEIMGNAME" class="title-image">
+    </div>
 
     <p>ADD IMAGES HERE</p>
 
@@ -139,8 +171,6 @@
     <div class="section-box">
       <h2>How It Was Made</h2>
 
-      <br>
-
       <h3>Fabrication</h3>
 
       <div class="image-row">
@@ -150,10 +180,6 @@
 
         <div class="image-box">
           <img src="Board Piece Slotted.png">
-        </div>
-
-         <div class="image-box">
-          <img src="Board Piece Bottom.png">
         </div>
       </div>
 
