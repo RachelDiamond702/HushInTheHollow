@@ -141,6 +141,27 @@
         margin-left: 0;
       }
     }
+
+    /* NEW helper for Trees layout */
+    .image-text-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin: 10px 0 20px 0;
+    }
+
+    .image-text-row img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .image-text-row p {
+      margin: 0;
+    }
+
   </style>
 </head>
 
@@ -258,12 +279,11 @@
     </p>
 
     <h3>The Trees</h3>
-    <div class="image-row">
-      <div class="media-box">
-        <img src="Trees.JPG" alt="Trees">
-      </div>
-      <div class="media-box"></div>
-      <div class="media-box"></div>
+    <div class="image-text-row">
+      <img src="Trees.JPG" alt="Trees">
+      <p>
+        The trees were designed using 3D modeling software and then fabricated from laser-cut cardstock for precision and consistency in assembly.
+      </p>
     </div>
 
     <h3>The Witch’s Hut</h3>
