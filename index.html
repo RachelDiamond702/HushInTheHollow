@@ -15,8 +15,15 @@
       color: #2f5e46;
     }
 
+    /* TITLE AREA (kept contained) */
     .container {
       max-width: 750px;
+    }
+
+    /* EVERYTHING ELSE (now expandable) */
+    .full-width {
+      width: 100%;
+      max-width: 1200px;
     }
 
     .title-row {
@@ -141,32 +148,12 @@
         margin-left: 0;
       }
     }
-
-    /* NEW helper for Trees layout */
-    .image-text-row {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      margin: 10px 0 20px 0;
-    }
-
-    .image-text-row img {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-    }
-
-    .image-text-row p {
-      margin: 0;
-    }
-
   </style>
 </head>
 
 <body>
 
+<!-- TITLE (kept small width) -->
 <div class="container">
 
   <div class="title-row">
@@ -175,6 +162,11 @@
   </div>
 
   <p class="subtitle">By: Rachel Diamond</p>
+
+</div>
+
+<!-- EVERYTHING ELSE (FULL WIDTH) -->
+<div class="full-width">
 
   <div class="image-row">
     <div class="media-box">
@@ -250,6 +242,7 @@
     <p>
       When the goblin town is alerted a red card is drawn. Players around the board may choose to join or decline.
     </p>
+
     <ul>
       <li>Success: Mana points are shared.</li>
       <li>Failure: All players are injured next round.</li>
@@ -278,21 +271,19 @@
       The trees and buildings were made from laser-cut cardstock. The paper town and witch’s hut were first modeled in 3D software, then translated into physical pieces through laser cutting and assembly.
     </p>
 
-   <h3>The Trees</h3>
+    <h3>The Trees</h3>
+    <div class="image-row">
+      <div class="media-box">
+        <img src="Trees.JPG" alt="Trees 1">
+      </div>
+      <div class="media-box">
+        <img src="Tree Design.png" alt="Trees 2">
+      </div>
+    </div>
 
-<div class="image-row">
-  <div class="media-box">
-    <img src="Trees.JPG" alt="Trees 1">
-  </div>
-
-  <div class="media-box">
-    <img src="Tree Design.png" alt="Trees 2">
-  </div>
-</div>
-
-<p>
-  Adobe Illustrator was used to create the tree tops, trunks, and stumps. These were then laser cut and glued to create the finalized trees.
-</p>
+    <p>
+      Adobe Illustrator was used to design the tree shapes. They were then laser cut from cardstock and assembled into layered 3D forms.
+    </p>
 
     <h3>The Witch’s Hut</h3>
     <div class="image-row">
@@ -302,7 +293,6 @@
       <div class="media-box">
         <img src="HUT_IMAGE_2.png" alt="Witch Hut 2">
       </div>
-      <div class="media-box"></div>
     </div>
 
     <h3>The Goblin Town</h3>
@@ -313,7 +303,6 @@
       <div class="media-box">
         <img src="TOWN_IMAGE_2.png" alt="Goblin Town 2">
       </div>
-      <div class="media-box"></div>
     </div>
 
     <h3><strong>The Characters</strong></h3>
